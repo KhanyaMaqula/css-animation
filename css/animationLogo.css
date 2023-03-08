@@ -1,0 +1,26 @@
+ /* The animation code */
+ @keyframes animateInsta  {
+    0%   {
+        border-radius: 0%;
+        filter: grayscale(0%);
+    }
+    25%  {
+        border-radius: 100%;
+        filter: grayscale(25%);
+    }
+    50%  {
+        filter: grayscale(50%);
+    }
+    100% {
+        filter: grayscale(100%);
+    }
+  }
+  
+  /* The element to apply the animation to */
+  img {
+    width: 100px;
+    height: 100px;
+    animation-name: animateInsta;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;    
+  } 
